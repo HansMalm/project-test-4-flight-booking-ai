@@ -1,0 +1,59 @@
+.sidebar {
+  position: sticky;
+  top: calc(var(--navbar-h) + 24px);
+  width: 240px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  background: var(--paper-dark);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 20px;
+  max-height: calc(100vh - var(--navbar-h) - 48px);
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  margin: 0 0 16px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-orange);
+  border-bottom: 2px solid var(--rule);
+  padding-bottom: 8px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group h3 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-inputs input {
+  width: 70px;
+  padding: 4px 6px;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+}

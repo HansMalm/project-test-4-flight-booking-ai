@@ -1,0 +1,29 @@
+.hero {
+  padding: 64px 32px;
+  text-align: center;
+  background: var(--paper-dark);
+  border-bottom: 3px double var(--rule);
+}
+
+.hero-title {
+  font-family: var(--font-hero);
+  font-size: 72px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0.03em;
+  color: var(--accent-yellow);
+  text-shadow: 3px 3px 0 var(--ink);
+}
+
+.hero-tagline {
+  margin: 16px 0 0;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 44px;
+  }
+}

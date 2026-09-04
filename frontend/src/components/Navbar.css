@@ -1,0 +1,40 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: var(--navbar-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+  border-bottom: 1px solid var(--rule);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 28px;
+}
+
+.navbar-links a {
+  color: var(--navbar-text);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.navbar-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color: var(--navbar-text);
+}
