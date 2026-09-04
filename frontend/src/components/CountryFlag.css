@@ -1,0 +1,10 @@
+.country-flag {
+  display: block;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+
+.country-flag svg {
+  display: block;
+}

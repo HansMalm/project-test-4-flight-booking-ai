@@ -1,4 +1,5 @@
 import type { Flight } from '../data/flights'
+import CountryFlag from './CountryFlag'
 import './FlightCard.css'
 
 interface FlightCardProps {
@@ -8,6 +9,10 @@ interface FlightCardProps {
 function FlightCard({ flight }: FlightCardProps) {
   return (
     <article className="flight-card">
+      <div className="flight-card-flag">
+        <CountryFlag code={flight.flag} />
+      </div>
+
       <div className="flight-card-route">
         <div className="flight-card-airport">
           <span className="code">{flight.originCode}</span>
