@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/project-test-4-flight-booking-ai/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
